@@ -39,6 +39,6 @@ class LandingController extends Controller
 
     public function success()
     {
-
+        return view('success');
     }
 }

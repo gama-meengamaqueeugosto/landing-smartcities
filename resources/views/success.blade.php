@@ -13,7 +13,7 @@
 </head>
 <body>
 <header id="header">
-	<div class="container container-header">
+	<div class="container container-header"> 
 		<div class="row">
 			<img  height="400" width="800" src="{{ asset('assets/img/toposite_baixa_corte.jpg')}}">
 		</div>
