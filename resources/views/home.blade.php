@@ -15,7 +15,7 @@
 	<header id="header">
 		<div class="container container-header">
 			<div class="row">
-				<img src="{{ asset('assets/img/gama-sem-fundo.jpg') }}">
+				<img width="800" height="400" src="{{ asset('assets/img/toposite_baixa_corte.jpg') }}">
 			</div>
 		</div>
 	</header>
