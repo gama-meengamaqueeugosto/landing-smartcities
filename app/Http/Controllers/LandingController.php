@@ -21,9 +21,12 @@ class LandingController extends Controller
      */
     public function index()
     {
-        $view = view('welcome');
+       return view('home');
+    }
 
-        return $view;
+    public function welcome()
+    {
+        return view('welcome');
     }
 
     public function store(LeadsSaveRequest $request)

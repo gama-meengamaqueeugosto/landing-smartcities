@@ -12,6 +12,7 @@
 */
 
 Route::get('/', ['as' => 'home', 'uses' => 'LandingController@index']);
+Route::get('/welcome', ['as' => 'welcome', 'uses' => 'LandingController@welcome']);
 
 Route::post('/', ['as' => 'leads.save', 'uses' => 'LandingController@store']);
 Route::get('/obrigado', ['as' => 'leads.success', 'uses' => 'LandingController@success']);
