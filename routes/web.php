@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home', 'uses' => 'LandingController@index']);
+
+Route::post('/', ['as' => 'leads.save', 'uses' => 'LandingController@store']);
+Route::get('/obrigado', ['as' => 'leads.success', 'uses' => 'LandingController@success']);
+

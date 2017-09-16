@@ -16,6 +16,7 @@ class CreateLeadsTable extends Migration
         Schema::create('leads', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string("email");
             $table->string('phone');
             $table->enum('branch', ['Full Stack', 'Frontend', 'Backend']);
             $table->timestamps();

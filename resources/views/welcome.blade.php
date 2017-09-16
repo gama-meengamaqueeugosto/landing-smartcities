@@ -90,6 +90,26 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
+            <form action="{{ route('leads.save') }}" method="POST">
+                {{ csrf_field() }}
+
+                <label for="">Nome</label>
+                <input type="text" name="name"> <br><br>
+
+                <label for="">Email</label>
+                <input type="text" name="email"> <br><br>
+
+                <label for="">Telefone</label>
+                <input type="text" name="phone"> <br><br>
+
+                <select name="branch" id="">
+                    <option value="Full Stack"> Full Stack</option>
+                    <option value="Backend"> Backend</option>
+                    <option value="Frontend"> Frontend</option>
+                </select>
+                <button type="submit">Salvar</button>
+            </form>
         </div>
     </body>
 </html>
